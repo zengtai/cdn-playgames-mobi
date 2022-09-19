@@ -5,14 +5,18 @@ import List from "../components/List";
 import { categories } from "../data/categories";
 import Banner from "../components/Banner";
 import { IconNew, IconFire } from "../components/Icons";
-import { ADS_SLOT_ID } from "../lib/constants";
+import { ADS_SLOT_ID, FEATURED_GAMES } from "../lib/constants";
 import Head from "next/head";
 import { getGamesForHome } from "../lib/api";
 
 const IndexPage = ({ games, categories }) => {
-  const topGames = games.filter((item) => item.featured === true);
-  const otherGames = games.filter((item) => item.featured !== true);
-  const [randomData, setRandomData] = React.useState(
+  const topGames = games
+    .slice()
+    .filter((item) => FEATURED_GAMES.includes(item.gid));
+  const otherGames = games
+    .slice()
+    .filter((item) => !FEATURED_GAMES.includes(item.gid));
+  const [randomData] = React.useState(
     otherGames.slice().sort(() => 0.5 - Math.random())
   );
 
@@ -55,11 +59,11 @@ const IndexPage = ({ games, categories }) => {
 export default IndexPage;
 
 export const getStaticProps = async () => {
-  const games = await getGamesForHome();
+  const games = await getGamesForHome(200);
   return {
     props: {
       games: games,
-      categories: categories,
+      categories: games,
     },
     // revalidate: 60,
   };

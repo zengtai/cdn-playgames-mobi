@@ -1,6 +1,5 @@
-import * as React from "react";
 import { ADS_ID, MODE } from "../lib/constants";
-import { Script } from "next/script";
+import Script from "next/script";
 
 export default function Banner({
   className,

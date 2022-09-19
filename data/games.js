@@ -1,7 +1,7 @@
 export const games = [
   {
     id: "2331",
-    appid: "SkatingMaster",
+    gid: "SkatingMaster",
     title: "Skating Master",
     slug: "skating-master",
     category: { name: "Racing", slug: "racing" },
@@ -14,7 +14,7 @@ export const games = [
   },
   {
     id: "2330",
-    appid: "RushAndFire",
+    gid: "RushAndFire",
     title: "Rush And Fire",
     slug: "rush-and-fire",
     category: { name: "Arcade", slug: "arcade" },
@@ -27,7 +27,7 @@ export const games = [
   },
   {
     id: "2329",
-    appid: "LittleFarm",
+    gid: "LittleFarm",
     title: "Little Farm",
     slug: "little-farm",
     category: { name: "Simulation", slug: "simulation" },
@@ -40,7 +40,7 @@ export const games = [
   },
   {
     id: "2328",
-    appid: "Hurricane",
+    gid: "Hurricane",
     title: "Hurricane",
     slug: "hurricane",
     category: { name: "IO", slug: "io" },
@@ -53,7 +53,7 @@ export const games = [
   },
   {
     id: "2327",
-    appid: "BigEater",
+    gid: "BigEater",
     title: "Big Eater",
     slug: "big-eater",
     category: { name: "Arcade", slug: "arcade" },
@@ -66,7 +66,7 @@ export const games = [
   },
   {
     id: "2325",
-    appid: "WoodIsland",
+    gid: "WoodIsland",
     title: "Wood Island",
     slug: "wood-island",
     category: { name: "Simulation", slug: "simulation" },
@@ -79,7 +79,7 @@ export const games = [
   },
   {
     id: "2324",
-    appid: "TinyWar",
+    gid: "TinyWar",
     title: "Tiny War",
     slug: "tiny-war",
     category: { name: "Strategy", slug: "strategy" },
@@ -92,7 +92,7 @@ export const games = [
   },
   {
     id: "2323",
-    appid: "InfiDefense",
+    gid: "InfiDefense",
     title: "Infi Defense",
     slug: "infi-defense",
     category: { name: "Strategy", slug: "strategy" },
@@ -105,7 +105,7 @@ export const games = [
   },
   {
     id: "2322",
-    appid: "BoomingPlant",
+    gid: "BoomingPlant",
     title: "Booming Plant",
     slug: "booming-plant",
     category: { name: "Simulation", slug: "simulation" },
@@ -118,7 +118,7 @@ export const games = [
   },
   {
     id: "2321",
-    appid: "BestSniper",
+    gid: "BestSniper",
     title: "Best Sniper",
     slug: "best-sniper",
     category: { name: "Shooting", slug: "shooting" },
@@ -131,7 +131,7 @@ export const games = [
   },
   {
     id: "2319",
-    appid: "ShootingStar",
+    gid: "ShootingStar",
     title: "Shooting Star",
     slug: "shooting-star",
     category: { name: "Sports", slug: "sports" },
@@ -144,7 +144,7 @@ export const games = [
   },
   {
     id: "2318",
-    appid: "CutMaster",
+    gid: "CutMaster",
     title: "Cut Master",
     slug: "cut-master",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -157,7 +157,7 @@ export const games = [
   },
   {
     id: "2317",
-    appid: "CrayonPop",
+    gid: "CrayonPop",
     title: "Crayon Pop",
     slug: "crayon-pop",
     category: { name: "Arcade", slug: "arcade" },
@@ -170,7 +170,7 @@ export const games = [
   },
   {
     id: "2320",
-    appid: "ColorHammer",
+    gid: "ColorHammer",
     title: "Color Hammer",
     slug: "color-hammer",
     category: { name: "Arcade", slug: "arcade" },
@@ -183,7 +183,7 @@ export const games = [
   },
   {
     id: "2316",
-    appid: "BilliardKing",
+    gid: "BilliardKing",
     title: "Billiard King",
     slug: "billiard-king",
     category: { name: "Sports", slug: "sports" },
@@ -196,7 +196,7 @@ export const games = [
   },
   {
     id: "2314",
-    appid: "SnakeHit",
+    gid: "SnakeHit",
     title: "Snake Hit",
     slug: "snake-hit",
     category: { name: "Arcade", slug: "arcade" },
@@ -209,7 +209,7 @@ export const games = [
   },
   {
     id: "2313",
-    appid: "FuryEdge",
+    gid: "FuryEdge",
     title: "Fury Edge",
     slug: "fury-edge",
     category: { name: "IO", slug: "io" },
@@ -222,7 +222,7 @@ export const games = [
   },
   {
     id: "2312",
-    appid: "ColorCrash",
+    gid: "ColorCrash",
     title: "Color Crash",
     slug: "color-crash",
     category: { name: "Match 3", slug: "match-3" },
@@ -235,7 +235,7 @@ export const games = [
   },
   {
     id: "2311",
-    appid: "BuilderRun",
+    gid: "BuilderRun",
     title: "Builder Run",
     slug: "builder-run",
     category: { name: "Arcade", slug: "arcade" },
@@ -248,7 +248,7 @@ export const games = [
   },
   {
     id: "2315",
-    appid: "BraveArcher",
+    gid: "BraveArcher",
     title: "Brave Archer",
     slug: "brave-archer",
     category: { name: "Adventure", slug: "adventure" },
@@ -261,7 +261,7 @@ export const games = [
   },
   {
     id: "2308",
-    appid: "WildRoll",
+    gid: "WildRoll",
     title: "Wild Roll",
     slug: "wild-roll",
     category: { name: "Adventure", slug: "adventure" },
@@ -274,7 +274,7 @@ export const games = [
   },
   {
     id: "2306",
-    appid: "RoofRunner",
+    gid: "RoofRunner",
     title: "Roof Runner",
     slug: "roof-runner",
     category: { name: "Racing", slug: "racing" },
@@ -287,7 +287,7 @@ export const games = [
   },
   {
     id: "2310",
-    appid: "MadEraser",
+    gid: "MadEraser",
     title: "Mad Eraser",
     slug: "mad-eraser",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -300,7 +300,7 @@ export const games = [
   },
   {
     id: "2309",
-    appid: "HarvestStory",
+    gid: "HarvestStory",
     title: "Harvest Story",
     slug: "harvest-story",
     category: { name: "Simulation", slug: "simulation" },
@@ -313,7 +313,7 @@ export const games = [
   },
   {
     id: "2307",
-    appid: "CityExpress",
+    gid: "CityExpress",
     title: "City Express",
     slug: "city-express",
     category: { name: "Racing", slug: "racing" },
@@ -326,7 +326,7 @@ export const games = [
   },
   {
     id: "2305",
-    appid: "PowerShooter",
+    gid: "PowerShooter",
     title: "Power Shooter",
     slug: "power-shooter",
     category: { name: "Sports", slug: "sports" },
@@ -339,7 +339,7 @@ export const games = [
   },
   {
     id: "2304",
-    appid: "GoldenBoot",
+    gid: "GoldenBoot",
     title: "Golden Boot",
     slug: "golden-boot",
     category: { name: "Sports", slug: "sports" },
@@ -352,7 +352,7 @@ export const games = [
   },
   {
     id: "2303",
-    appid: "FreeFall",
+    gid: "FreeFall",
     title: "Free Fall",
     slug: "free-fall",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -365,7 +365,7 @@ export const games = [
   },
   {
     id: "2302",
-    appid: "CountingMaster",
+    gid: "CountingMaster",
     title: "Counting Master",
     slug: "counting-master",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -378,7 +378,7 @@ export const games = [
   },
   {
     id: "2301",
-    appid: "CleverRescue",
+    gid: "CleverRescue",
     title: "Clever Rescue",
     slug: "clever-rescue",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -391,7 +391,7 @@ export const games = [
   },
   {
     id: "2295",
-    appid: "FruitsFall",
+    gid: "FruitsFall",
     title: "Fruits Fall",
     slug: "fruits-fall",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -404,7 +404,7 @@ export const games = [
   },
   {
     id: "2293",
-    appid: "RushingRover",
+    gid: "RushingRover",
     title: "Rushing Rover",
     slug: "rushing-rover",
     category: { name: "Arcade", slug: "arcade" },
@@ -417,7 +417,7 @@ export const games = [
   },
   {
     id: "2294",
-    appid: "RollingAgent",
+    gid: "RollingAgent",
     title: "Rolling Agent",
     slug: "rolling-agent",
     category: { name: "Adventure", slug: "adventure" },
@@ -430,7 +430,7 @@ export const games = [
   },
   {
     id: "2290",
-    appid: "RocketJump",
+    gid: "RocketJump",
     title: "Rocket Jump",
     slug: "rocket-jump",
     category: { name: "Sports", slug: "sports" },
@@ -443,7 +443,7 @@ export const games = [
   },
   {
     id: "2291",
-    appid: "MagicPaint",
+    gid: "MagicPaint",
     title: "Magic Paint",
     slug: "magic-paint",
     category: { name: "Strategy", slug: "strategy" },
@@ -456,7 +456,7 @@ export const games = [
   },
   {
     id: "2292",
-    appid: "GlidingCharger",
+    gid: "GlidingCharger",
     title: "Gliding Charger",
     slug: "gliding-charger",
     category: { name: "Adventure", slug: "adventure" },
@@ -469,7 +469,7 @@ export const games = [
   },
   {
     id: "2288",
-    appid: "TheSameWorld",
+    gid: "TheSameWorld",
     title: "The Same World",
     slug: "the-same-world",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -482,7 +482,7 @@ export const games = [
   },
   {
     id: "2287",
-    appid: "SuperMiner",
+    gid: "SuperMiner",
     title: "Super Miner",
     slug: "super-miner",
     category: { name: "Simulation", slug: "simulation" },
@@ -495,7 +495,7 @@ export const games = [
   },
   {
     id: "2286",
-    appid: "ColorSplash",
+    gid: "ColorSplash",
     title: "Color Splash",
     slug: "color-splash",
     category: { name: "Strategy", slug: "strategy" },
@@ -508,7 +508,7 @@ export const games = [
   },
   {
     id: "2285",
-    appid: "ColorBead",
+    gid: "ColorBead",
     title: "Color Bead",
     slug: "color-bead",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -521,7 +521,7 @@ export const games = [
   },
   {
     id: "2284",
-    appid: "BounceShooter",
+    gid: "BounceShooter",
     title: "Bounce Shooter",
     slug: "bounce-shooter",
     category: { name: "Match 3", slug: "match-3" },
@@ -534,7 +534,7 @@ export const games = [
   },
   {
     id: "2283",
-    appid: "RainbowSplash",
+    gid: "RainbowSplash",
     title: "Rainbow Splash",
     slug: "rainbow-splash",
     category: { name: "Match 3", slug: "match-3" },
@@ -547,7 +547,7 @@ export const games = [
   },
   {
     id: "2282",
-    appid: "MatchingCook",
+    gid: "MatchingCook",
     title: "Matching Cook",
     slug: "matching-cook",
     category: { name: "Match 3", slug: "match-3" },
@@ -560,7 +560,7 @@ export const games = [
   },
   {
     id: "2281",
-    appid: "MagicPainter",
+    gid: "MagicPainter",
     title: "Magic Painter",
     slug: "magic-painter",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -573,7 +573,7 @@ export const games = [
   },
   {
     id: "2280",
-    appid: "HappyTetris",
+    gid: "HappyTetris",
     title: "Happy Tetris",
     slug: "happy-tetris",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -586,7 +586,7 @@ export const games = [
   },
   {
     id: "2279",
-    appid: "BlockMaze",
+    gid: "BlockMaze",
     title: "Block Maze",
     slug: "block-maze",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -599,7 +599,7 @@ export const games = [
   },
   {
     id: "2278",
-    appid: "RoadCharger",
+    gid: "RoadCharger",
     title: "Road Charger",
     slug: "road-charger",
     category: { name: "Racing", slug: "racing" },
@@ -612,7 +612,7 @@ export const games = [
   },
   {
     id: "2277",
-    appid: "IronAttack",
+    gid: "IronAttack",
     title: "Iron Attack",
     slug: "iron-attack",
     category: { name: "Arcade", slug: "arcade" },
@@ -625,7 +625,7 @@ export const games = [
   },
   {
     id: "2276",
-    appid: "FierceCity",
+    gid: "FierceCity",
     title: "Fierce City",
     slug: "fierce-city",
     category: { name: "Arcade", slug: "arcade" },
@@ -638,7 +638,7 @@ export const games = [
   },
   {
     id: "2275",
-    appid: "BombingTime",
+    gid: "BombingTime",
     title: "Bombing Time",
     slug: "bombing-time",
     category: { name: "Strategy", slug: "strategy" },
@@ -651,7 +651,7 @@ export const games = [
   },
   {
     id: "2274",
-    appid: "AntRun",
+    gid: "AntRun",
     title: "Ant Run",
     slug: "ant-run",
     category: { name: "Arcade", slug: "arcade" },
@@ -664,7 +664,7 @@ export const games = [
   },
   {
     id: "2273",
-    appid: "AirBrawl",
+    gid: "AirBrawl",
     title: "Air Brawl",
     slug: "air-brawl",
     category: { name: "Shooting", slug: "shooting" },
@@ -677,7 +677,7 @@ export const games = [
   },
   {
     id: "2272",
-    appid: "BrainMaster",
+    gid: "BrainMaster",
     title: "Brain Master",
     slug: "brain-master",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -690,7 +690,7 @@ export const games = [
   },
   {
     id: "2271",
-    appid: "SwiftRider",
+    gid: "SwiftRider",
     title: "Swift Rider",
     slug: "swift-rider",
     category: { name: "Racing", slug: "racing" },
@@ -703,7 +703,7 @@ export const games = [
   },
   {
     id: "2270",
-    appid: "PuzzleVenture",
+    gid: "PuzzleVenture",
     title: "Puzzle Venture",
     slug: "puzzle-venture",
     category: { name: "Adventure", slug: "adventure" },
@@ -716,7 +716,7 @@ export const games = [
   },
   {
     id: "2268",
-    appid: "MelodyLink",
+    gid: "MelodyLink",
     title: "Melody Link",
     slug: "melody-link",
     category: { name: "Match 3", slug: "match-3" },
@@ -729,7 +729,7 @@ export const games = [
   },
   {
     id: "2269",
-    appid: "DessertConnect",
+    gid: "DessertConnect",
     title: "Dessert Connect",
     slug: "dessert-connect",
     category: { name: "Match 3", slug: "match-3" },
@@ -742,7 +742,7 @@ export const games = [
   },
   {
     id: "1270",
-    appid: "CrazyGunfight",
+    gid: "CrazyGunfight",
     title: "Crazy Gunfight",
     slug: "crazy-gunfight",
     category: { name: "IO", slug: "io" },
@@ -755,7 +755,7 @@ export const games = [
   },
   {
     id: "1269",
-    appid: "UltraDrift",
+    gid: "UltraDrift",
     title: "Ultra Drift",
     slug: "ultra-drift",
     category: { name: "Racing", slug: "racing" },
@@ -768,7 +768,7 @@ export const games = [
   },
   {
     id: "1268",
-    appid: "SnakeGo",
+    gid: "SnakeGo",
     title: "Snake Go",
     slug: "snake-go",
     category: { name: "Arcade", slug: "arcade" },
@@ -781,7 +781,7 @@ export const games = [
   },
   {
     id: "1267",
-    appid: "SharkIsComing",
+    gid: "SharkIsComing",
     title: "Shark Is Coming",
     slug: "shark-is-coming",
     category: { name: "Arcade", slug: "arcade" },
@@ -794,7 +794,7 @@ export const games = [
   },
   {
     id: "1266",
-    appid: "MergeCat",
+    gid: "MergeCat",
     title: "Merge Cat",
     slug: "merge-cat",
     category: { name: "Simulation", slug: "simulation" },
@@ -807,7 +807,7 @@ export const games = [
   },
   {
     id: "1265",
-    appid: "ColorRing",
+    gid: "ColorRing",
     title: "Color Ring",
     slug: "color-ring",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -820,7 +820,7 @@ export const games = [
   },
   {
     id: "1264",
-    appid: "CandyHit",
+    gid: "CandyHit",
     title: "Candy Hit",
     slug: "candy-hit",
     category: { name: "Casual", slug: "casual" },
@@ -833,7 +833,7 @@ export const games = [
   },
   {
     id: "1263",
-    appid: "RelivedLife",
+    gid: "RelivedLife",
     title: "Relived Life",
     slug: "relived-life",
     category: { name: "Simulation", slug: "simulation" },
@@ -846,7 +846,7 @@ export const games = [
   },
   {
     id: "282",
-    appid: "PuppyRun",
+    gid: "PuppyRun",
     title: "Puppy Run",
     slug: "puppy-run",
     category: { name: "Arcade", slug: "arcade" },
@@ -859,7 +859,7 @@ export const games = [
   },
   {
     id: "280",
-    appid: "PenguinDash",
+    gid: "PenguinDash",
     title: "Penguin Dash",
     slug: "penguin-dash",
     category: { name: "Arcade", slug: "arcade" },
@@ -872,7 +872,7 @@ export const games = [
   },
   {
     id: "281",
-    appid: "MonsterCrash",
+    gid: "MonsterCrash",
     title: "Monster Crash",
     slug: "monster-crash",
     category: { name: "Arcade", slug: "arcade" },
@@ -885,7 +885,7 @@ export const games = [
   },
   {
     id: "279",
-    appid: "CrackShot",
+    gid: "CrackShot",
     title: "Crack Shot",
     slug: "crack-shot",
     category: { name: "Shooting", slug: "shooting" },
@@ -898,7 +898,7 @@ export const games = [
   },
   {
     id: "278",
-    appid: "BubblePop",
+    gid: "BubblePop",
     title: "Bubble Pop",
     slug: "bubble-pop",
     category: { name: "Arcade", slug: "arcade" },
@@ -911,7 +911,7 @@ export const games = [
   },
   {
     id: "277",
-    appid: "Super2048",
+    gid: "Super2048",
     title: "Super 2048",
     slug: "super-2048",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -924,7 +924,7 @@ export const games = [
   },
   {
     id: "276",
-    appid: "JumpSmash",
+    gid: "JumpSmash",
     title: "Jump Smash",
     slug: "jump-smash",
     category: { name: "Arcade", slug: "arcade" },
@@ -937,7 +937,7 @@ export const games = [
   },
   {
     id: "274",
-    appid: "FingerCannon",
+    gid: "FingerCannon",
     title: "Finger Cannon",
     slug: "finger-cannon",
     category: { name: "Shooting", slug: "shooting" },
@@ -950,7 +950,7 @@ export const games = [
   },
   {
     id: "273",
-    appid: "SuperDefense",
+    gid: "SuperDefense",
     title: "Super Defense",
     slug: "super-defense",
     category: { name: "Strategy", slug: "strategy" },
@@ -963,7 +963,7 @@ export const games = [
   },
   {
     id: "272",
-    appid: "MrRacer",
+    gid: "MrRacer",
     title: "Mr Racer",
     slug: "mr-racer",
     category: { name: "Racing", slug: "racing" },
@@ -976,7 +976,7 @@ export const games = [
   },
   {
     id: "271",
-    appid: "MagicParkour",
+    gid: "MagicParkour",
     title: "Magic Parkour",
     slug: "magic-parkour",
     category: { name: "Racing", slug: "racing" },
@@ -989,7 +989,7 @@ export const games = [
   },
   {
     id: "270",
-    appid: "FruitMonster",
+    gid: "FruitMonster",
     title: "Fruit Monster",
     slug: "fruit-monster",
     category: { name: "Shooting", slug: "shooting" },
@@ -1002,7 +1002,7 @@ export const games = [
   },
   {
     id: "269",
-    appid: "FrozenMagic",
+    gid: "FrozenMagic",
     title: "Frozen Magic",
     slug: "frozen-magic",
     category: { name: "Adventure", slug: "adventure" },
@@ -1015,7 +1015,7 @@ export const games = [
   },
   {
     id: "268",
-    appid: "FinalBattle",
+    gid: "FinalBattle",
     title: "Final Battle",
     slug: "final-battle",
     category: { name: "Arcade", slug: "arcade" },
@@ -1028,7 +1028,7 @@ export const games = [
   },
   {
     id: "267",
-    appid: "CrazyDrift",
+    gid: "CrazyDrift",
     title: "Crazy Drift",
     slug: "crazy-drift",
     category: { name: "Racing", slug: "racing" },
@@ -1041,7 +1041,7 @@ export const games = [
   },
   {
     id: "266",
-    appid: "BulletMan",
+    gid: "BulletMan",
     title: "Bullet Man",
     slug: "bullet-man",
     category: { name: "Shooting", slug: "shooting" },
@@ -1054,7 +1054,7 @@ export const games = [
   },
   {
     id: "264",
-    appid: "FeedMaster",
+    gid: "FeedMaster",
     title: "Feed Master",
     slug: "feed-master",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1067,7 +1067,7 @@ export const games = [
   },
   {
     id: "263",
-    appid: "CrazyKart3D",
+    gid: "CrazyKart3D",
     title: "Crazy Kart 3D",
     slug: "crazy-kart-3d",
     category: { name: "Racing", slug: "racing" },
@@ -1080,7 +1080,7 @@ export const games = [
   },
   {
     id: "262",
-    appid: "SplittingCells",
+    gid: "SplittingCells",
     title: "Splitting Cells",
     slug: "splitting-cells",
     category: { name: "Shooting", slug: "shooting" },
@@ -1093,7 +1093,7 @@ export const games = [
   },
   {
     id: "260",
-    appid: "TrafficRun",
+    gid: "TrafficRun",
     title: "Traffic Run",
     slug: "traffic-run",
     category: { name: "Arcade", slug: "arcade" },
@@ -1106,7 +1106,7 @@ export const games = [
   },
   {
     id: "259",
-    appid: "CrazyHammer",
+    gid: "CrazyHammer",
     title: "Crazy Hammer",
     slug: "crazy-hammer",
     category: { name: "IO", slug: "io" },
@@ -1119,7 +1119,7 @@ export const games = [
   },
   {
     id: "258",
-    appid: "TrafficPassing",
+    gid: "TrafficPassing",
     title: "Traffic Passing",
     slug: "traffic-passing",
     category: { name: "Arcade", slug: "arcade" },
@@ -1132,7 +1132,7 @@ export const games = [
   },
   {
     id: "257",
-    appid: "DeathJump",
+    gid: "DeathJump",
     title: "Death Jump",
     slug: "death-jump",
     category: { name: "Adventure", slug: "adventure" },
@@ -1145,7 +1145,7 @@ export const games = [
   },
   {
     id: "256",
-    appid: "PipePuzzle",
+    gid: "PipePuzzle",
     title: "Pipe Puzzle",
     slug: "pipe-puzzle",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1158,7 +1158,7 @@ export const games = [
   },
   {
     id: "255",
-    appid: "ArchersKing",
+    gid: "ArchersKing",
     title: "Archers King",
     slug: "archers-king",
     category: { name: "Shooting", slug: "shooting" },
@@ -1171,7 +1171,7 @@ export const games = [
   },
   {
     id: "254",
-    appid: "CrazyRace",
+    gid: "CrazyRace",
     title: "Crazy Race",
     slug: "crazy-race",
     category: { name: "Arcade", slug: "arcade" },
@@ -1184,7 +1184,7 @@ export const games = [
   },
   {
     id: "253",
-    appid: "FairyTalesPuzzle",
+    gid: "FairyTalesPuzzle",
     title: "Fairy Tales Puzzle",
     slug: "fairy-tales-puzzle",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1197,7 +1197,7 @@ export const games = [
   },
   {
     id: "251",
-    appid: "MagicJigsaw",
+    gid: "MagicJigsaw",
     title: "Magic Jigsaw",
     slug: "magic-jigsaw",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1210,7 +1210,7 @@ export const games = [
   },
   {
     id: "250",
-    appid: "BallIsComing",
+    gid: "BallIsComing",
     title: "Ball Is Coming",
     slug: "ball-is-coming",
     category: { name: "Sports", slug: "sports" },
@@ -1223,7 +1223,7 @@ export const games = [
   },
   {
     id: "249",
-    appid: "MyUnicorn",
+    gid: "MyUnicorn",
     title: "My Unicorn",
     slug: "my-unicorn",
     category: { name: "Girl", slug: "girl" },
@@ -1236,7 +1236,7 @@ export const games = [
   },
   {
     id: "248",
-    appid: "HungyBunny",
+    gid: "HungyBunny",
     title: "Hungy Bunny",
     slug: "hungy-bunny",
     category: { name: "Arcade", slug: "arcade" },
@@ -1249,7 +1249,7 @@ export const games = [
   },
   {
     id: "247",
-    appid: "8BallKing",
+    gid: "8BallKing",
     title: "8 Ball King",
     slug: "8-ball-king",
     category: { name: "Sports", slug: "sports" },
@@ -1262,7 +1262,7 @@ export const games = [
   },
   {
     id: "246",
-    appid: "MyBabyCare",
+    gid: "MyBabyCare",
     title: "My Baby Care",
     slug: "my-baby-care",
     category: { name: "Girl", slug: "girl" },
@@ -1275,7 +1275,7 @@ export const games = [
   },
   {
     id: "245",
-    appid: "DartsKing3D",
+    gid: "DartsKing3D",
     title: "Darts King 3D",
     slug: "darts-king-3d",
     category: { name: "Sports", slug: "sports" },
@@ -1288,7 +1288,7 @@ export const games = [
   },
   {
     id: "244",
-    appid: "Chess3D",
+    gid: "Chess3D",
     title: "Chess 3D",
     slug: "chess-3d",
     category: { name: "Sports", slug: "sports" },
@@ -1301,7 +1301,7 @@ export const games = [
   },
   {
     id: "243",
-    appid: "MyBowling3D",
+    gid: "MyBowling3D",
     title: "My Bowling 3D",
     slug: "my-bowling-3d",
     category: { name: "Sports", slug: "sports" },
@@ -1314,7 +1314,7 @@ export const games = [
   },
   {
     id: "242",
-    appid: "AirHockey3D",
+    gid: "AirHockey3D",
     title: "Air Hockey 3D",
     slug: "air-hockey-3d",
     category: { name: "Sports", slug: "sports" },
@@ -1327,7 +1327,7 @@ export const games = [
   },
   {
     id: "241",
-    appid: "HungryMonster",
+    gid: "HungryMonster",
     title: "Hungry Monster",
     slug: "hungry-monster",
     category: { name: "Arcade", slug: "arcade" },
@@ -1340,7 +1340,7 @@ export const games = [
   },
   {
     id: "240",
-    appid: "PlantBeatZombies",
+    gid: "PlantBeatZombies",
     title: "Plant Beat Zombies",
     slug: "plant-beat-zombies",
     category: { name: "Strategy", slug: "strategy" },
@@ -1353,7 +1353,7 @@ export const games = [
   },
   {
     id: "239",
-    appid: "MagicNumber",
+    gid: "MagicNumber",
     title: "Magic Number",
     slug: "magic-number",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1366,7 +1366,7 @@ export const games = [
   },
   {
     id: "238",
-    appid: "FillTheGlass",
+    gid: "FillTheGlass",
     title: "Fill The Glass",
     slug: "fill-the-glass",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1379,7 +1379,7 @@ export const games = [
   },
   {
     id: "237",
-    appid: "PandaRescue",
+    gid: "PandaRescue",
     title: "Panda Rescue",
     slug: "panda-rescue",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1392,7 +1392,7 @@ export const games = [
   },
   {
     id: "229",
-    appid: "TowerDefenseX",
+    gid: "TowerDefenseX",
     title: "Tower Defense X",
     slug: "tower-defense-x",
     category: { name: "Strategy", slug: "strategy" },
@@ -1405,7 +1405,7 @@ export const games = [
   },
   {
     id: "225",
-    appid: "SuperGolf",
+    gid: "SuperGolf",
     title: "Super Golf",
     slug: "super-golf",
     category: { name: "Sports", slug: "sports" },
@@ -1418,7 +1418,7 @@ export const games = [
   },
   {
     id: "221",
-    appid: "SkyRunning3D",
+    gid: "SkyRunning3D",
     title: "Sky Running 3D",
     slug: "sky-running-3d",
     category: { name: "Racing", slug: "racing" },
@@ -1431,7 +1431,7 @@ export const games = [
   },
   {
     id: "215",
-    appid: "PetRun",
+    gid: "PetRun",
     title: "Pet Run",
     slug: "pet-run",
     category: { name: "Casual", slug: "casual" },
@@ -1444,7 +1444,7 @@ export const games = [
   },
   {
     id: "214",
-    appid: "MrBullet",
+    gid: "MrBullet",
     title: "Mr Bullet",
     slug: "mr-bullet",
     category: { name: "Shooting", slug: "shooting" },
@@ -1457,7 +1457,7 @@ export const games = [
   },
   {
     id: "211",
-    appid: "MergeMagicJewellery",
+    gid: "MergeMagicJewellery",
     title: "Merge Magic Jewellery",
     slug: "merge-magic-jewellery",
     category: { name: "Match 3", slug: "match-3" },
@@ -1470,7 +1470,7 @@ export const games = [
   },
   {
     id: "208",
-    appid: "MergeAndDefense",
+    gid: "MergeAndDefense",
     title: "Merge And Defense",
     slug: "merge-and-defense",
     category: { name: "Strategy", slug: "strategy" },
@@ -1483,7 +1483,7 @@ export const games = [
   },
   {
     id: "207",
-    appid: "MahjongLink3D",
+    gid: "MahjongLink3D",
     title: "Mahjong Link 3D",
     slug: "mahjong-link-3d",
     category: { name: "Match 3", slug: "match-3" },
@@ -1496,7 +1496,7 @@ export const games = [
   },
   {
     id: "199",
-    appid: "JumpingMonkey",
+    gid: "JumpingMonkey",
     title: "Jumping Monkey",
     slug: "jumping-monkey",
     category: { name: "Arcade", slug: "arcade" },
@@ -1509,7 +1509,7 @@ export const games = [
   },
   {
     id: "196",
-    appid: "HungryAnimals",
+    gid: "HungryAnimals",
     title: "Hungry Animals",
     slug: "hungry-animals",
     category: { name: "Arcade", slug: "arcade" },
@@ -1522,7 +1522,7 @@ export const games = [
   },
   {
     id: "186",
-    appid: "FeverRacing",
+    gid: "FeverRacing",
     title: "Fever Racing",
     slug: "fever-racing",
     category: { name: "Racing", slug: "racing" },
@@ -1535,7 +1535,7 @@ export const games = [
   },
   {
     id: "185",
-    appid: "DressQueen",
+    gid: "DressQueen",
     title: "Dress Queen",
     slug: "dress-queen",
     category: { name: "Girl", slug: "girl" },
@@ -1548,7 +1548,7 @@ export const games = [
   },
   {
     id: "181",
-    appid: "CrazyTrain3D",
+    gid: "CrazyTrain3D",
     title: "Crazy Train 3D",
     slug: "crazy-train-3d",
     category: { name: "Arcade", slug: "arcade" },
@@ -1561,7 +1561,7 @@ export const games = [
   },
   {
     id: "180",
-    appid: "CrazyPortal",
+    gid: "CrazyPortal",
     title: "Crazy Portal",
     slug: "crazy-portal",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1574,7 +1574,7 @@ export const games = [
   },
   {
     id: "169",
-    appid: "BlockPuzzle",
+    gid: "BlockPuzzle",
     title: "Block Puzzle",
     slug: "block-puzzle",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1587,7 +1587,7 @@ export const games = [
   },
   {
     id: "163",
-    appid: "AmazingRoad",
+    gid: "AmazingRoad",
     title: "Amazing Road",
     slug: "amazing-road",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1600,7 +1600,7 @@ export const games = [
   },
   {
     id: "236",
-    appid: "ZumaMarbles",
+    gid: "ZumaMarbles",
     title: "Zuma Marbles",
     slug: "zuma-marbles",
     category: { name: "Match 3", slug: "match-3" },
@@ -1613,7 +1613,7 @@ export const games = [
   },
   {
     id: "235",
-    appid: "ZooBlast",
+    gid: "ZooBlast",
     title: "Zoo Blast",
     slug: "zoo-blast",
     category: { name: "Match 3", slug: "match-3" },
@@ -1626,7 +1626,7 @@ export const games = [
   },
   {
     id: "234",
-    appid: "ZombieSurvival",
+    gid: "ZombieSurvival",
     title: "Zombie Survival",
     slug: "zombie-survival",
     category: { name: "Adventure", slug: "adventure" },
@@ -1639,7 +1639,7 @@ export const games = [
   },
   {
     id: "233",
-    appid: "VirusWar",
+    gid: "VirusWar",
     title: "Virus War",
     slug: "virus-war",
     category: { name: "Strategy", slug: "strategy" },
@@ -1652,7 +1652,7 @@ export const games = [
   },
   {
     id: "232",
-    appid: "TwistyRoad",
+    gid: "TwistyRoad",
     title: "Twisty Road",
     slug: "twisty-road",
     category: { name: "Arcade", slug: "arcade" },
@@ -1665,7 +1665,7 @@ export const games = [
   },
   {
     id: "184",
-    appid: "DragonCrush",
+    gid: "DragonCrush",
     title: "Dragon Crush",
     slug: "dragon-crush",
     category: { name: "Match 3", slug: "match-3" },
@@ -1678,7 +1678,7 @@ export const games = [
   },
   {
     id: "231",
-    appid: "TrappedPirate",
+    gid: "TrappedPirate",
     title: "Trapped Pirate",
     slug: "trapped-pirate",
     category: { name: "Strategy", slug: "strategy" },
@@ -1691,7 +1691,7 @@ export const games = [
   },
   {
     id: "183",
-    appid: "DefenseTower",
+    gid: "DefenseTower",
     title: "Defense Tower",
     slug: "defense-tower",
     category: { name: "Strategy", slug: "strategy" },
@@ -1704,7 +1704,7 @@ export const games = [
   },
   {
     id: "230",
-    appid: "Transform",
+    gid: "Transform",
     title: "Transform",
     slug: "transform",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1717,7 +1717,7 @@ export const games = [
   },
   {
     id: "228",
-    appid: "TowerBlast3D",
+    gid: "TowerBlast3D",
     title: "Tower Blast 3D",
     slug: "tower-blast-3d",
     category: { name: "Match 3", slug: "match-3" },
@@ -1730,7 +1730,7 @@ export const games = [
   },
   {
     id: "224",
-    appid: "StickmanVsZombies",
+    gid: "StickmanVsZombies",
     title: "Stickman Vs Zombies",
     slug: "stickman-vs-zombies",
     category: { name: "Adventure", slug: "adventure" },
@@ -1743,7 +1743,7 @@ export const games = [
   },
   {
     id: "220",
-    appid: "ShootSmash",
+    gid: "ShootSmash",
     title: "Shoot Smash",
     slug: "shoot-smash",
     category: { name: "Casual", slug: "casual" },
@@ -1756,7 +1756,7 @@ export const games = [
   },
   {
     id: "213",
-    appid: "MiningMaster",
+    gid: "MiningMaster",
     title: "Mining Master",
     slug: "mining-master",
     category: { name: "Adventure", slug: "adventure" },
@@ -1769,7 +1769,7 @@ export const games = [
   },
   {
     id: "212",
-    appid: "Mining",
+    gid: "Mining",
     title: "Mining",
     slug: "mining",
     category: { name: "Adventure", slug: "adventure" },
@@ -1782,7 +1782,7 @@ export const games = [
   },
   {
     id: "210",
-    appid: "MergeKill",
+    gid: "MergeKill",
     title: "Merge Kill",
     slug: "merge-kill",
     category: { name: "IO", slug: "io" },
@@ -1795,7 +1795,7 @@ export const games = [
   },
   {
     id: "209",
-    appid: "MergeGuns3D",
+    gid: "MergeGuns3D",
     title: "Merge Guns 3D",
     slug: "merge-guns-3d",
     category: { name: "Shooting", slug: "shooting" },
@@ -1808,7 +1808,7 @@ export const games = [
   },
   {
     id: "206",
-    appid: "MahjongConnect",
+    gid: "MahjongConnect",
     title: "Mahjong Connect",
     slug: "mahjong-connect",
     category: { name: "Match 3", slug: "match-3" },
@@ -1821,7 +1821,7 @@ export const games = [
   },
   {
     id: "198",
-    appid: "ImEmpire",
+    gid: "ImEmpire",
     title: "Im Empire",
     slug: "im-empire",
     category: { name: "Simulation", slug: "simulation" },
@@ -1834,7 +1834,7 @@ export const games = [
   },
   {
     id: "197",
-    appid: "IdleRestaurantTycoon",
+    gid: "IdleRestaurantTycoon",
     title: "Idle Restaurant Tycoon",
     slug: "idle-restaurant-tycoon",
     category: { name: "Simulation", slug: "simulation" },
@@ -1847,7 +1847,7 @@ export const games = [
   },
   {
     id: "195",
-    appid: "HiTaxi",
+    gid: "HiTaxi",
     title: "Hi Taxi",
     slug: "hi-taxi",
     category: { name: "Arcade", slug: "arcade" },
@@ -1860,7 +1860,7 @@ export const games = [
   },
   {
     id: "182",
-    appid: "DeathRun",
+    gid: "DeathRun",
     title: "Death Run",
     slug: "death-run",
     category: { name: "Adventure", slug: "adventure" },
@@ -1873,7 +1873,7 @@ export const games = [
   },
   {
     id: "179",
-    appid: "CrazyMoto",
+    gid: "CrazyMoto",
     title: "Crazy Moto",
     slug: "crazy-moto",
     category: { name: "Racing", slug: "racing" },
@@ -1886,7 +1886,7 @@ export const games = [
   },
   {
     id: "168",
-    appid: "BlockGun3D",
+    gid: "BlockGun3D",
     title: "Block Gun 3D",
     slug: "block-gun-3d",
     category: { name: "Shooting", slug: "shooting" },
@@ -1899,7 +1899,7 @@ export const games = [
   },
   {
     id: "162",
-    appid: "AceMan",
+    gid: "AceMan",
     title: "Ace Man",
     slug: "ace-man",
     category: { name: "Sports", slug: "sports" },
@@ -1912,7 +1912,7 @@ export const games = [
   },
   {
     id: "223",
-    appid: "SolitaireClassic",
+    gid: "SolitaireClassic",
     title: "Solitaire Classic",
     slug: "solitaire-classic",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -1925,7 +1925,7 @@ export const games = [
   },
   {
     id: "219",
-    appid: "ShootingCubes",
+    gid: "ShootingCubes",
     title: "Shooting Cubes",
     slug: "shooting-cubes",
     category: { name: "Shooting", slug: "shooting" },
@@ -1938,7 +1938,7 @@ export const games = [
   },
   {
     id: "205",
-    appid: "MagicDonuts",
+    gid: "MagicDonuts",
     title: "Magic Donuts",
     slug: "magic-donuts",
     category: { name: "Arcade", slug: "arcade" },
@@ -1951,7 +1951,7 @@ export const games = [
   },
   {
     id: "194",
-    appid: "HillRacing",
+    gid: "HillRacing",
     title: "Hill Racing",
     slug: "hill-racing",
     category: { name: "Racing", slug: "racing" },
@@ -1964,7 +1964,7 @@ export const games = [
   },
   {
     id: "178",
-    appid: "CrazyKnife",
+    gid: "CrazyKnife",
     title: "Crazy Knife",
     slug: "crazy-knife",
     category: { name: "Casual", slug: "casual" },
@@ -1977,7 +1977,7 @@ export const games = [
   },
   {
     id: "167",
-    appid: "BigSword",
+    gid: "BigSword",
     title: "Big Sword",
     slug: "big-sword",
     category: { name: "Arcade", slug: "arcade" },
@@ -1990,7 +1990,7 @@ export const games = [
   },
   {
     id: "161",
-    appid: "4096",
+    gid: "4096",
     title: "4096",
     slug: "4096",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -2003,7 +2003,7 @@ export const games = [
   },
   {
     id: "227",
-    appid: "TableTennisChampionship",
+    gid: "TableTennisChampionship",
     title: "Table Tennis Championship",
     slug: "table-tennis-championship",
     category: { name: "Sports", slug: "sports" },
@@ -2016,7 +2016,7 @@ export const games = [
   },
   {
     id: "222",
-    appid: "SoccerHero",
+    gid: "SoccerHero",
     title: "Soccer Hero",
     slug: "soccer-hero",
     category: { name: "Sports", slug: "sports" },
@@ -2029,7 +2029,7 @@ export const games = [
   },
   {
     id: "218",
-    appid: "SaveThePets",
+    gid: "SaveThePets",
     title: "Save The Pets",
     slug: "save-the-pets",
     category: { name: "Casual", slug: "casual" },
@@ -2042,7 +2042,7 @@ export const games = [
   },
   {
     id: "204",
-    appid: "LetMeIn",
+    gid: "LetMeIn",
     title: "Let Me In",
     slug: "let-me-in",
     category: { name: "Casual", slug: "casual" },
@@ -2055,7 +2055,7 @@ export const games = [
   },
   {
     id: "193",
-    appid: "HelpTheZombie",
+    gid: "HelpTheZombie",
     title: "Help The Zombie",
     slug: "help-the-zombie",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -2068,7 +2068,7 @@ export const games = [
   },
   {
     id: "177",
-    appid: "CrazyBomb",
+    gid: "CrazyBomb",
     title: "Crazy Bomb",
     slug: "crazy-bomb",
     category: { name: "Strategy", slug: "strategy" },
@@ -2081,7 +2081,7 @@ export const games = [
   },
   {
     id: "166",
-    appid: "BatterKing",
+    gid: "BatterKing",
     title: "Batter King",
     slug: "batter-king",
     category: { name: "Sports", slug: "sports" },
@@ -2094,7 +2094,7 @@ export const games = [
   },
   {
     id: "226",
-    appid: "SuperThrow",
+    gid: "SuperThrow",
     title: "Super Throw",
     slug: "super-throw",
     category: { name: "Casual", slug: "casual" },
@@ -2107,7 +2107,7 @@ export const games = [
   },
   {
     id: "217",
-    appid: "PianoKeys",
+    gid: "PianoKeys",
     title: "Piano Keys",
     slug: "piano-keys",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -2120,7 +2120,7 @@ export const games = [
   },
   {
     id: "203",
-    appid: "KnockBalls",
+    gid: "KnockBalls",
     title: "Knock Balls",
     slug: "knock-balls",
     category: { name: "Shooting", slug: "shooting" },
@@ -2133,7 +2133,7 @@ export const games = [
   },
   {
     id: "192",
-    appid: "HappyBilliards",
+    gid: "HappyBilliards",
     title: "Happy Billiards",
     slug: "happy-billiards",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -2146,7 +2146,7 @@ export const games = [
   },
   {
     id: "176",
-    appid: "CrashTower3D",
+    gid: "CrashTower3D",
     title: "Crash Tower 3D",
     slug: "crash-tower-3d",
     category: { name: "Arcade", slug: "arcade" },
@@ -2159,7 +2159,7 @@ export const games = [
   },
   {
     id: "165",
-    appid: "ArcheryMaster",
+    gid: "ArcheryMaster",
     title: "Archery Master",
     slug: "archery-master",
     category: { name: "Sports", slug: "sports" },
@@ -2172,7 +2172,7 @@ export const games = [
   },
   {
     id: "216",
-    appid: "PetsMatch",
+    gid: "PetsMatch",
     title: "Pets Match",
     slug: "pets-match",
     category: { name: "Match 3", slug: "match-3" },
@@ -2185,7 +2185,7 @@ export const games = [
   },
   {
     id: "202",
-    appid: "Knife",
+    gid: "Knife",
     title: "Knife",
     slug: "knife",
     category: { name: "IO", slug: "io" },
@@ -2198,7 +2198,7 @@ export const games = [
   },
   {
     id: "191",
-    appid: "GunShooter",
+    gid: "GunShooter",
     title: "Gun Shooter",
     slug: "gun-shooter",
     category: { name: "Shooting", slug: "shooting" },
@@ -2211,7 +2211,7 @@ export const games = [
   },
   {
     id: "175",
-    appid: "ColorBall3D",
+    gid: "ColorBall3D",
     title: "Color Ball 3D",
     slug: "color-ball-3d",
     category: { name: "Racing", slug: "racing" },
@@ -2224,7 +2224,7 @@ export const games = [
   },
   {
     id: "164",
-    appid: "AnipopLink",
+    gid: "AnipopLink",
     title: "Anipop Link",
     slug: "anipop-link",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -2237,7 +2237,7 @@ export const games = [
   },
   {
     id: "201",
-    appid: "KimbapRun",
+    gid: "KimbapRun",
     title: "Kimbap Run",
     slug: "kimbap-run",
     category: { name: "Strategy", slug: "strategy" },
@@ -2250,7 +2250,7 @@ export const games = [
   },
   {
     id: "190",
-    appid: "GoldenGlove",
+    gid: "GoldenGlove",
     title: "Golden Glove",
     slug: "golden-glove",
     category: { name: "Sports", slug: "sports" },
@@ -2263,7 +2263,7 @@ export const games = [
   },
   {
     id: "174",
-    appid: "CollectColorfulBalls",
+    gid: "CollectColorfulBalls",
     title: "Collect Colorful Balls",
     slug: "collect-colorful-balls",
     category: { name: "Puzzle", slug: "puzzle" },
@@ -2276,7 +2276,7 @@ export const games = [
   },
   {
     id: "200",
-    appid: "KillAllZombies",
+    gid: "KillAllZombies",
     title: "Kill All Zombies",
     slug: "kill-all-zombies",
     category: { name: "Shooting", slug: "shooting" },
@@ -2289,7 +2289,7 @@ export const games = [
   },
   {
     id: "189",
-    appid: "FlyPass",
+    gid: "FlyPass",
     title: "Fly Pass",
     slug: "fly-pass",
     category: { name: "Arcade", slug: "arcade" },
@@ -2302,7 +2302,7 @@ export const games = [
   },
   {
     id: "173",
-    appid: "BumbleShooter",
+    gid: "BumbleShooter",
     title: "Bumble Shooter",
     slug: "bumble-shooter",
     category: { name: "Match 3", slug: "match-3" },
@@ -2315,7 +2315,7 @@ export const games = [
   },
   {
     id: "188",
-    appid: "FisherMan",
+    gid: "FisherMan",
     title: "Fisher Man",
     slug: "fisher-man",
     category: { name: "Strategy", slug: "strategy" },
@@ -2328,7 +2328,7 @@ export const games = [
   },
   {
     id: "172",
-    appid: "BulletMaster3D",
+    gid: "BulletMaster3D",
     title: "Bullet Master 3D",
     slug: "bullet-master-3d",
     category: { name: "Shooting", slug: "shooting" },
@@ -2341,7 +2341,7 @@ export const games = [
   },
   {
     id: "187",
-    appid: "FireTheGun",
+    gid: "FireTheGun",
     title: "Fire The Gun",
     slug: "fire-the-gun",
     category: { name: "Shooting", slug: "shooting" },
@@ -2354,7 +2354,7 @@ export const games = [
   },
   {
     id: "171",
-    appid: "BubbleBlast",
+    gid: "BubbleBlast",
     title: "Bubble Blast",
     slug: "bubble-blast",
     category: { name: "Match 3", slug: "match-3" },
@@ -2367,7 +2367,7 @@ export const games = [
   },
   {
     id: "170",
-    appid: "BoardTheTrain",
+    gid: "BoardTheTrain",
     title: "Board The Train",
     slug: "board-the-train",
     category: { name: "Arcade", slug: "arcade" },
