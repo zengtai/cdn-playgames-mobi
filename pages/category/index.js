@@ -1,58 +1,20 @@
-import * as React from "react";
+import Image from "next/future/image";
 import Link from "next/link";
+import * as React from "react";
+import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
 import {
-  ActionIcon,
-  CasualIcon,
-  ShootingIcon,
-  SportsIcon,
-  StrategyIcon,
-  DefenseIcon,
-  PuzzleIcon,
-  SimulationIcon,
-  RacingIcon,
-} from "../../components/Icons";
-import { games } from "../../data/games";
-import { categories } from "../../data/categories";
-import Banner from "../../components/Banner";
-import List from "../../components/List";
-import {
   getAllCategoriesWithSlug,
-  getGamesByCategory,
   getDataForCategoryList,
 } from "../../lib/api";
-import { ADS_SLOT_ID, IMAGE_PATH, IMAGE_FORMAT } from "../../lib/constants";
-import Image from "next/future/image";
-
-import { useEffect, useState } from "react";
+import { ADS_SLOT_ID, IMAGE_FORMAT, IMAGE_PATH } from "../../lib/constants";
 
 const CategoryListPage = ({ categories, allGames }) => {
-  // console.log(`data`, games.length);
-  // let currentData = games.slice();
-  // let mostlyPlayed = games.slice(0, 6);
-  // console.log(`categories`, categories);
-  // console.log(`games`, games);
-  // console.log(`games`, games);
-  console.log(`allGames`, allGames);
-
-  // const [games, setGames] = useState([]);
-
-  // useEffect(() => {
-  //   let tmp = [];
-  //   categories.map(async (item) => {
-  //     let games = await getGamesByCategory(item.slug);
-  //     let tmpData = {
-  //       category: { name: games[0].category.name, slug: item.slug },
-  //       games: [...games.map((i) => i.gid)],
-  //     };
-
-  //     tmp.push(tmpData);
-  //   });
-
-  //   setGames((g) => [...g, tmp]);
-  // }, [categories]);
-
-  // console.log(`games`, games);
+  // console.log(`allGames`, allGames);
+  // console.log(
+  //   `allGames`,
+  //   JSON.stringify([].concat(allGames.map((i) => i.games)).join(","))
+  // );
 
   return (
     <Layout>
@@ -109,10 +71,10 @@ const CategoryListPage = ({ categories, allGames }) => {
           key={`category-list`}
         />
       </div>
-      <h2 className="mx-4 my-2 p-2 text-center font-bold text-cyan-600">
+      {/* <h2 className="mx-4 my-2 p-2 text-center font-bold text-cyan-600">
         <span>- Most Played -</span>
       </h2>
-      {/* <List items={mostlyPlayed} /> */}
+      <List items={mostlyPlayed} /> */}
     </Layout>
   );
 };

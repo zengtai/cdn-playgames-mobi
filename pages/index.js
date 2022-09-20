@@ -2,19 +2,14 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import List from "../components/List";
 // import { games } from "../data/games";
-import { categories } from "../data/categories";
-import Banner from "../components/Banner";
-import { IconNew, IconFire } from "../components/Icons";
-import { ADS_SLOT_ID, FEATURED_GAMES, SELECTED_GAMES } from "../lib/constants";
 import Head from "next/head";
-import {
-  getGamesForHome,
-  getAllGamesWithSlug,
-  getGameBySlug,
-} from "../lib/api";
+import Banner from "../components/Banner";
+import { IconFire, IconNew } from "../components/Icons";
+import { getGamesForHome } from "../lib/api";
+import { ADS_SLOT_ID, FEATURED_GAMES, SELECTED_GAMES } from "../lib/constants";
 
 const IndexPage = ({ games, categories, paths }) => {
-  console.log(`paths`, paths);
+  // console.log(`paths`, paths);
   const topGames = games
     .slice()
     .filter((item) => FEATURED_GAMES.includes(item.gid));
