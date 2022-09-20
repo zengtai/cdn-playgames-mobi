@@ -42,12 +42,8 @@ export default function Banner({
         dangerouslySetInnerHTML={{
           __html: `
             try {
-              let adsbygoogle = window.adsbygoogle || [];
-              adsbygoogle.push({});
-              console.log("ad pushed");
-            } catch (e) {
-              console.error(e.message);
-            }
+              (adsbygoogle = window.adsbygoogle || []).push({})
+            } catch(e) { console.log(e) }
           `,
         }}
       />

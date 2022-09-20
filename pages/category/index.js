@@ -98,46 +98,6 @@ const CategoryListPage = ({ categories, allGames }) => {
                 </a>
               </Link>
             </li>
-            // <li key={item.slug}>
-            //   <Link href={`/category`}>
-            //     <a className="flex justify-between rounded-lg border bg-white p-3">
-            //       <div className="flex items-center space-x-2">
-            //         <CasualIcon />
-            //         <span>Casual</span>
-            //       </div>
-            //       <div className="flex items-center gap-x-2">
-            //         <ul className="flex -space-x-1">
-            //           {currentData &&
-            //             currentData
-            //               .filter((item) => item.category.name === "Casual")
-            //               .slice(0, 3)
-            //               .map((item) => (
-            //                 <li key={`${item.gid}-${Math.random()}`}>
-            //                   <Image
-            //                     className="rounded-full border-2 border-white"
-            //                     src={
-            //                       IMAGE_PATH +
-            //                       IMAGE_FORMAT +
-            //                       `/` +
-            //                       item.gid +
-            //                       `.` +
-            //                       IMAGE_FORMAT
-            //                     }
-            //                     alt={item.title}
-            //                     width={24}
-            //                     height={24}
-            //                   />
-            //                 </li>
-            //               ))}
-            //         </ul>
-            //         <span className="text-xs">
-            //           {currentData && currentData.length}
-            //           {"+"}
-            //         </span>
-            //       </div>
-            //     </a>
-            //   </Link>
-            // </li>
           );
         })}
       </ul>
@@ -182,7 +142,7 @@ export const getStaticProps = async (ctx) => {
     formatData.push(tmpData);
   });
 
-  console.log(`formatData (`, formatData.length, `)`, formatData);
+  // console.log(`formatData (`, formatData.length, `)`, formatData);
 
   // let tmp = [];
   // allCategories.map(async (item) => {

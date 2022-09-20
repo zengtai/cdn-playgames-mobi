@@ -26,14 +26,14 @@ export default function ListItem({ item }) {
             </h2>
           </a>
         </Link>
-        <div className="sr-only origin-left scale-90">
+        {/* <div className="sr-only origin-left scale-90">
           <Link
             className="rounded-md bg-slate-200 p-1 text-xs uppercase"
             href={`/category/${item.category.slug}`}
           >
             <a>{item.category.name}</a>
           </Link>
-        </div>
+        </div> */}
       </div>
     </li>
   );

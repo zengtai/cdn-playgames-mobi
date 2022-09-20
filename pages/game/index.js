@@ -99,7 +99,7 @@ const Game = ({ game }) => {
         className={`my-4 flex flex-col items-center`}
         style={{ width: `320px` }}
         slot={ADS_SLOT_ID.detail}
-        format={`auto`}
+        format={`rectangle, horizontal`}
         responsive={`false`}
         key={`game-${Math.random()}`}
       />
