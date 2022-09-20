@@ -7,7 +7,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   // basePath: "/channel/tpal/v1_beta2",
-  basePath: "/channel/tpal/v1",
+  basePath: "/web/channel/tpal/v1",
 
   generateBuildId: async () => {
     return "20220920";
