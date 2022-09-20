@@ -5,11 +5,16 @@ import List from "../components/List";
 import { categories } from "../data/categories";
 import Banner from "../components/Banner";
 import { IconNew, IconFire } from "../components/Icons";
-import { ADS_SLOT_ID, FEATURED_GAMES } from "../lib/constants";
+import { ADS_SLOT_ID, FEATURED_GAMES, SELECTED_GAMES } from "../lib/constants";
 import Head from "next/head";
-import { getGamesForHome } from "../lib/api";
+import {
+  getGamesForHome,
+  getAllGamesWithSlug,
+  getGameBySlug,
+} from "../lib/api";
 
-const IndexPage = ({ games, categories }) => {
+const IndexPage = ({ games, categories, paths }) => {
+  console.log(`paths`, paths);
   const topGames = games
     .slice()
     .filter((item) => FEATURED_GAMES.includes(item.gid));
@@ -59,11 +64,14 @@ const IndexPage = ({ games, categories }) => {
 export default IndexPage;
 
 export const getStaticProps = async () => {
-  const games = await getGamesForHome(200);
+  const games = await getGamesForHome(300, SELECTED_GAMES);
+  // const paths = await getAllGamesWithSlug();
+  // const game = await getGameBySlug("soccer-hero");
   return {
     props: {
       games: games,
       categories: games,
+      // paths: game,
     },
     // revalidate: 60,
   };

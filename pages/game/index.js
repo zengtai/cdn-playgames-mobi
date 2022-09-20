@@ -17,24 +17,29 @@ import {
   getRelatedGamesBySlug,
 } from "../../lib/api";
 
-const Play = ({ game, relatedGames }) => {
+const Game = ({ game }) => {
   console.log(`game`, game);
-  // const game = games.find((item) => item.gid == "CrayonPop");
+  const filteredData = games.find((item) => item.gid == "CrayonPop");
   return (
-    <Layout title={game.title}>
+    <Layout title={filteredData.title}>
       <div className="relative overflow-hidden bg-cyan-800/40 xl:mx-auto xl:max-w-3xl">
         <div className="relative z-10 mt-6 flex flex-col items-center">
           <Image
             className="mx-auto h-32 w-32 rounded-lg"
             src={
-              IMAGE_PATH + IMAGE_FORMAT + `/` + game.gid + `.` + IMAGE_FORMAT
+              IMAGE_PATH +
+              IMAGE_FORMAT +
+              `/` +
+              filteredData.gid +
+              `.` +
+              IMAGE_FORMAT
             }
-            alt={game.title}
+            alt={filteredData.title}
             width={200}
             height={200}
           />
           <h1 className="my-2 font-bold text-white drop-shadow">
-            <span>{`${game.title}`}</span>
+            <span>{`${filteredData.title}`}</span>
           </h1>
 
           <Banner
@@ -49,8 +54,8 @@ const Play = ({ game, relatedGames }) => {
           <div className="mb-4">
             <a
               className="block rounded-lg bg-sky-500 px-6 py-4 font-bold text-white shadow-md shadow-black/10"
-              href={GAME_PATH + game.gid}
-              title={`Play ${game.title} Now`}
+              href={GAME_PATH + filteredData.gid}
+              title={`Play ${filteredData.title} Now`}
             >
               Play Now
             </a>
@@ -58,8 +63,15 @@ const Play = ({ game, relatedGames }) => {
         </div>
         <Image
           className="absolute inset-0 z-0 h-full w-full object-contain opacity-50 blur-2xl"
-          src={IMAGE_PATH + IMAGE_FORMAT + `/` + game.gid + `.` + IMAGE_FORMAT}
-          alt={game.title}
+          src={
+            IMAGE_PATH +
+            IMAGE_FORMAT +
+            `/` +
+            filteredData.gid +
+            `.` +
+            IMAGE_FORMAT
+          }
+          alt={filteredData.title}
           width={100}
           height={100}
         />
@@ -67,18 +79,22 @@ const Play = ({ game, relatedGames }) => {
       <div className="m-4 space-x-2 text-sm">
         <Link href={`/`}>Home</Link>
         <span className="text-gray-300">/</span>
-        <Link href={`/category`}>{game.category.name}</Link>
+        <Link href={`/category`}>{filteredData.category.name}</Link>
         <span className="text-gray-300">/</span>
-        <span className="text-gray-400">{game.title}</span>
+        <span className="text-gray-400">{filteredData.title}</span>
       </div>
       <div className="m-4 text-sm">
         <h3 className="my-2 font-bold text-gray-600">Description</h3>
-        <div>{game.description}</div>
+        <div>{filteredData.description}</div>
       </div>
       <h2 className="mx-4 my-2 p-2 text-center font-bold text-cyan-600">
         <span>- Most Played -</span>
       </h2>
-      <List items={relatedGames.slice(0, 6)} />
+      <List
+        items={games
+          .filter((item) => item.appid !== filteredData.appid)
+          .slice(0, 6)}
+      />
       <Banner
         className={`my-4 flex flex-col items-center`}
         style={{ width: `320px` }}
@@ -87,36 +103,22 @@ const Play = ({ game, relatedGames }) => {
         responsive={`false`}
         key={`game-${Math.random()}`}
       />
-      <List items={relatedGames.slice(6, 12)} />
+      <List items={games.slice(6, 12)} />
     </Layout>
   );
 };
 
-export default Play;
+export default Game;
 
 export const getStaticProps = async (ctx) => {
-  const currentGame = await getGameBySlug(ctx.params.slug);
-  const relatedGames = await getRelatedGamesBySlug(ctx.params.slug);
+  const currentGame = await getGameBySlug(`CrayonPop`);
+  // const relatedGames = await getRelatedGamesBySlug(`CrayonPop`);
   return {
     props: {
       game: currentGame,
-      relatedGames,
+      // relatedGames,
       // categories: games,
     },
     // revalidate: 60,
-  };
-};
-
-export const getStaticPaths = async () => {
-  const paths = await getAllGamesWithSlug();
-  // console.log(`paths`, paths);
-
-  return {
-    paths: paths.map((item) => ({
-      params: {
-        slug: item.slug,
-      },
-    })),
-    fallback: false,
   };
 };

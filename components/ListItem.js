@@ -7,7 +7,7 @@ export default function ListItem({ item }) {
   return (
     <li>
       <div>
-        <Link href={`/play`}>
+        <Link href={`/game/${item.slug}`}>
           <a>
             <Image
               className="rounded-xl bg-gray-100 shadow-lg"
@@ -29,7 +29,7 @@ export default function ListItem({ item }) {
         <div className="sr-only origin-left scale-90">
           <Link
             className="rounded-md bg-slate-200 p-1 text-xs uppercase"
-            href={`/category`}
+            href={`/category/${item.category.slug}`}
           >
             <a>{item.category.name}</a>
           </Link>

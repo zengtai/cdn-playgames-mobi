@@ -5,8 +5,8 @@ export default function Terms() {
   return (
     <Layout>
       <div className="p-4 text-sm text-slate-500 xl:mx-auto xl:w-[1120px]">
-        <h1 className="m-4 flex justify-center text-xl font-bold text-cyan-600">
-          <span>{SITE_META.NAME} Terms of Use</span>
+        <h1 className="m-4 text-center text-xl font-bold text-cyan-600">
+          Terms of Use
         </h1>
         <p className="my-2">
           The {SITE_META.NAME} website located at {SITE_META.URL} is a

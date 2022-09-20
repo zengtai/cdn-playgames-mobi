@@ -5,8 +5,8 @@ export default function Privacy() {
   return (
     <Layout>
       <div className="p-4 text-sm text-slate-500 xl:mx-auto xl:w-[1120px]">
-        <h1 className="m-4 flex justify-center text-xl font-bold text-cyan-600">
-          {SITE_META.NAME} Privacy Policy
+        <h1 className="m-4 text-center text-xl font-bold text-cyan-600">
+          Privacy Policy
         </h1>
         <p className="my-2">
           At {SITE_META.NAME}, accessible from {SITE_META.URL}, one of our main
