@@ -67,7 +67,9 @@ const Play = ({ game, relatedGames }) => {
       <div className="m-4 space-x-2 text-sm">
         <Link href={`/`}>Home</Link>
         <span className="text-gray-300">/</span>
-        <Link href={`/category`}>{game.category.name}</Link>
+        <Link href={`/category/${game.category.slug}`}>
+          {game.category.name}
+        </Link>
         <span className="text-gray-300">/</span>
         <span className="text-gray-400">{game.title}</span>
       </div>
