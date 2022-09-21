@@ -6,6 +6,7 @@ import Script from "next/script";
 import { GA_ID } from "../lib/constants";
 import * as gtag from "../lib/gtag";
 import NProgress from "nprogress";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -50,6 +51,27 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
+      <Head>
+        <meta name="google" content="notranslate" />
+        <link
+          rel="icon"
+          href={`${router.basePath}/favicon.ico`}
+          sizes="16x16"
+          type="image/x-icon"
+        />
+        <link
+          rel="icon"
+          href={`${router.basePath}/favicon.png`}
+          sizes="16x16 32x32 64x64"
+          type="image/png"
+        />
+        <link
+          rel="icon"
+          href={`${router.basePath}/favicon.svg`}
+          sizes="any"
+          type="image/svg+xml"
+        />
+      </Head>
       <Component {...pageProps} />
     </>
   );
