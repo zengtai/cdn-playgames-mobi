@@ -3,11 +3,11 @@ import Link from "next/link";
 import { IMAGE_FORMAT, IMAGE_PATH } from "../lib/constants";
 import Image from "next/future/image";
 
-export default function ListItem({ item }) {
+export default function ListItem({ item, from }) {
   return (
     <li>
       <div>
-        <Link href={`/game/${item.slug}`}>
+        <Link href={`/game/${item.slug}${from ? `?from=${from}` : ``}`}>
           <a>
             <Image
               className="rounded-xl bg-gray-100 shadow-lg"

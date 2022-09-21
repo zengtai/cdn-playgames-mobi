@@ -17,7 +17,7 @@ import {
   IMAGE_PATH,
 } from "../../lib/constants";
 
-const Play = ({ game, relatedGames, paths }) => {
+const Play = ({ game, relatedGames }) => {
   // console.log(`game`, game);
   // const game = games.find((item) => item.gid == "CrayonPop");
 
@@ -81,35 +81,41 @@ const Play = ({ game, relatedGames, paths }) => {
     <Layout title={game.title}>
       <div className="relative overflow-hidden bg-cyan-800/40 xl:mx-auto xl:max-w-3xl">
         <div className="relative z-10 mt-6 flex flex-col items-center">
-          <Image
-            className="mx-auto h-32 w-32 rounded-lg"
-            src={
-              IMAGE_PATH + IMAGE_FORMAT + `/` + game.gid + `.` + IMAGE_FORMAT
-            }
-            alt={game.title}
-            width={200}
-            height={200}
+          <a
             onClick={handleClick}
-          />
-          <h1 className="my-2 font-bold text-white drop-shadow">
-            <span>{`${game.title}`}</span>
-          </h1>
-
+            className="block text-center"
+            href={GAME_PATH + game.gid + `&t=icon`}
+            title={`Play ${game.title} Now`}
+          >
+            <Image
+              className="mx-auto h-32 w-32 rounded-lg"
+              src={
+                IMAGE_PATH + IMAGE_FORMAT + `/` + game.gid + `.` + IMAGE_FORMAT
+              }
+              alt={game.title}
+              width={200}
+              height={200}
+              onClick={handleClick}
+            />
+            <h1 className="my-2 font-bold text-white drop-shadow">
+              <span>{`${game.title}`}</span>
+            </h1>
+          </a>
           <Banner
-            className={`my-4`}
+            className={`mt-4 mb-8`}
             style={{ width: `320px` }}
             slot={ADS_SLOT_ID.detail}
-            format={`auto`}
-            responsive={`false`}
+            format={`rectangle`}
+            responsive={`true`}
             key={`game-${Math.random()}`}
           />
 
-          <div className="mb-6">
+          <div className="mb-8">
             <a
               onClick={handleClick}
               id="play_link"
               className="block rounded-lg bg-sky-500 px-6 py-4 font-bold text-white shadow-md shadow-black/10"
-              href={GAME_PATH + game.gid}
+              href={GAME_PATH + game.gid + `&t=btn`}
               title={`Play ${game.title} Now`}
             >
               Play Now
@@ -140,16 +146,16 @@ const Play = ({ game, relatedGames, paths }) => {
       <h2 className="mx-4 my-2 p-2 text-center font-bold text-cyan-600">
         <span>- Most Played -</span>
       </h2>
-      <List items={relatedGames.slice(0, 6)} />
+      <List items={relatedGames.slice(0, 6)} from={`game`} />
       <Banner
         className={`my-4 flex flex-col items-center`}
         style={{ width: `320px` }}
         slot={ADS_SLOT_ID.detail}
         format={`rectangle, horizontal`}
-        responsive={`false`}
+        responsive={`true`}
         key={`game-${Math.random()}`}
       />
-      <List items={relatedGames.slice(6, 12)} />
+      <List items={relatedGames.slice(6, 12)} from={`game`} />
     </Layout>
   );
 };

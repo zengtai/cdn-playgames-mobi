@@ -49,13 +49,13 @@ const RecentPage = ({ allSlugs }) => {
       )} */}
 
       {playedGames ? (
-        <List items={playedGames} />
+        <List items={playedGames} from={`history`} />
       ) : (
         <div className="m-4 flex flex-col items-center">
           <p className="p-4 border rounded-lg text-slate-500 text-sm">
             Oops! It looks like you&#39;ve never played any games here.
           </p>
-          <Link href={`/`}>
+          <Link href={`/?from=history`}>
             <a className="line-block mx-4 mt-8 py-4 px-6 bg-cyan-500 text-white rounded-full shadow-lg">
               Go to Homepage
             </a>
