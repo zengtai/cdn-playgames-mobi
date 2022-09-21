@@ -9,7 +9,7 @@ import GetIcon from "../../components/Icons";
 
 const Category = ({ games }) => {
   // console.log(data);
-  console.log(`games`, `()`, games.length, `):`, games);
+  // console.log(`games`, `(`, games.length, `):`, games);
   // const filteredData = games.filter((item) => item.category.name === "Casual");
   return (
     <Layout title={games[0].category.name + ` Games`}>

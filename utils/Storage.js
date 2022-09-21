@@ -21,9 +21,9 @@ export const setStorage = (key, value, expire) => {
     expire: expire, // 过期时间
   };
 
-  console.log(`time: `, new Date(data.time));
+  // console.log(`time: `, new Date(data.time));
   // console.log(`expire: `, new Date(data.expire).getSeconds() + `s`);
-  console.log(`expire: `, new Date(data.expire + data.time));
+  // console.log(`expire: `, new Date(data.expire + data.time));
 
   window[config.type].setItem(key, [JSON.stringify(data)]);
 };
@@ -40,11 +40,11 @@ export const getStorage = (key) => {
 
   // 优化 持续使用中续期
   const storage = JSON.parse(window[config.type].getItem(key));
-  console.log(`storage`, storage);
+  // console.log(`storage`, storage);
 
   let nowTime = Date.now();
 
-  console.log(config.expire, `s`, (nowTime - storage.time) / 1000, `s`);
+  // console.log(config.expire, `s`, (nowTime - storage.time) / 1000, `s`);
 
   // 过期删除
   if (storage.expire && config.expire * 1000 < nowTime - storage.time) {
