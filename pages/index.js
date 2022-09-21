@@ -1,30 +1,30 @@
-import * as React from "react";
+import { useEffect, useMemo, useState } from "react";
 import Layout from "../components/Layout";
 import List from "../components/List";
 // import { games } from "../data/games";
-import Head from "next/head";
 import Banner from "../components/Banner";
 import { IconFire, IconNew } from "../components/Icons";
 import { getGamesForHome } from "../lib/api";
-import { ADS_SLOT_ID, FEATURED_GAMES, SELECTED_GAMES } from "../lib/constants";
+import { ADS_SLOT_ID, FEATURED_GAMES } from "../lib/constants";
 
-const IndexPage = ({ games, categories, paths }) => {
+const IndexPage = ({ games }) => {
   // console.log(`paths`, paths);
-  const topGames = games
-    .slice()
-    .filter((item) => FEATURED_GAMES.includes(item.gid));
-  const otherGames = games
-    .slice()
-    .filter((item) => !FEATURED_GAMES.includes(item.gid));
-  const [randomData] = React.useState(
-    otherGames.slice().sort(() => 0.5 - Math.random())
-  );
+
+  let tmp = games.slice();
+  const featureGames = tmp.filter((item) => FEATURED_GAMES.includes(item.gid));
+  const topGames = tmp.filter((item) => !FEATURED_GAMES.includes(item.gid));
+
+  const [randomData, setRandomData] = useState(topGames);
+
+  useEffect(() => {
+    let tmp = topGames.slice();
+    setRandomData(() => tmp.sort(() => 0.5 - Math.random()));
+  }, []);
+
+  // console.log(`randomData`, randomData);
 
   return (
-    <Layout>
-      <Head>
-        <title>Home Page</title>
-      </Head>
+    <Layout title={`Home`}>
       <div>
         <Banner
           slot={ADS_SLOT_ID.home}
@@ -37,12 +37,12 @@ const IndexPage = ({ games, categories, paths }) => {
         <IconNew className="text-lime-500" />
         <span>Recommended</span>
       </h2>
-      <List items={topGames} />
+      <List items={featureGames} />
       <h2 className="mx-4 mt-4 mb-2 flex font-bold text-cyan-600">
         <IconFire className="text-red-500" />
         <span>Popular</span>
       </h2>
-      <List items={randomData.slice(3, 12)} />
+      <List items={randomData.slice(0, 9)} />
       <div className="my-4">
         <Banner
           slot={ADS_SLOT_ID.home}
@@ -51,7 +51,7 @@ const IndexPage = ({ games, categories, paths }) => {
           key={`home-pos-2`}
         />
       </div>
-      <List items={randomData.slice(12, 21)} />
+      <List items={randomData.slice(9, 18)} />
     </Layout>
   );
 };
@@ -59,13 +59,13 @@ const IndexPage = ({ games, categories, paths }) => {
 export default IndexPage;
 
 export const getStaticProps = async () => {
-  const games = await getGamesForHome(300, SELECTED_GAMES);
+  const games = await getGamesForHome(30);
   // const paths = await getAllGamesWithSlug();
   // const game = await getGameBySlug("soccer-hero");
   return {
     props: {
       games: games,
-      categories: games,
+      // categories: games,
       // paths: game,
     },
     // revalidate: 60,

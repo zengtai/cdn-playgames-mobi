@@ -1,19 +1,20 @@
 import * as React from "react";
 // import { games } from "../../data/games";
 import Banner from "../../components/Banner";
-import { CasualIcon } from "../../components/Icons";
 import Layout from "../../components/Layout";
 import List from "../../components/List";
 import { ADS_SLOT_ID } from "../../lib/constants";
 import { getGamesByCategory, getAllCategoriesWithSlug } from "../../lib/api";
+import GetIcon from "../../components/Icons";
 
 const Category = ({ games }) => {
   // console.log(data);
+  console.log(`games`, `()`, games.length, `):`, games);
   // const filteredData = games.filter((item) => item.category.name === "Casual");
   return (
     <Layout title={games[0].category.name + ` Games`}>
       <h1 className="m-4 flex items-center justify-center space-x-2 rounded-sm border bg-white p-3 font-bold text-cyan-600">
-        <CasualIcon />
+        {GetIcon({ name: `${games[0].category.slug}` })}
         <span>{games[0].category.name + ` Games`}</span>
       </h1>
 

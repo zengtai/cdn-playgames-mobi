@@ -1,46 +1,81 @@
 import Link from "next/link";
-import * as React from "react";
 
+import Image from "next/future/image";
 import Banner from "../../components/Banner";
+import Layout from "../../components/Layout";
 import List from "../../components/List";
 import {
-  ADS_SLOT_ID,
-  IMAGE_PATH,
-  IMAGE_FORMAT,
-  GAME_PATH,
-} from "../../lib/constants";
-import Layout from "../../components/Layout";
-import Image from "next/future/image";
-import {
+  getAllGamesWithSlug,
   getGameBySlug,
   getRelatedGamesBySlug,
-  getAllGamesWithSlug,
 } from "../../lib/api";
+import { setStorage, getStorage } from "../../utils/Storage";
+import {
+  ADS_SLOT_ID,
+  GAME_PATH,
+  IMAGE_FORMAT,
+  IMAGE_PATH,
+} from "../../lib/constants";
 
-const Play = ({ game, relatedGames }) => {
+const Play = ({ game, relatedGames, paths }) => {
   // console.log(`game`, game);
   // const game = games.find((item) => item.gid == "CrayonPop");
+
+  // console.log(`paths`, paths.map((i) => i.slug).join(`, `));
+
   const handleClick = () => {
-    if (typeof window !== "undefined") {
-      let _currentPlayedGames = JSON.parse(
-        localStorage.getItem("playedGames")
-      ) || { games: [] };
-      let isExist = _currentPlayedGames.games.find((i) => i.gid == game.gid);
-      if (!isExist) {
-        _currentPlayedGames.games.push({
+    // if (typeof window !== "undefined") {
+    //   let _currentPlayedGames = JSON.parse(
+    //     localStorage.getItem("playedGames")
+    //   ) || { games: [] };
+    //   let isExist = _currentPlayedGames.games.find((i) => i.gid == game.gid);
+    //   if (!isExist) {
+    //     _currentPlayedGames.games.push({
+    //       gid: game.gid,
+    //       title: game.title,
+    //       slug: game.slug,
+    //     });
+    //     _currentPlayedGames.games = [...new Set(_currentPlayedGames.games)];
+    //     localStorage.setItem(
+    //       "playedGames",
+    //       JSON.stringify(_currentPlayedGames)
+    //     );
+    //   }
+    // }
+    let currentData = getStorage(`playedGames`); // 提取本地数据，如果存在则追加，不存在则添加
+
+    console.log(`currentData: `, currentData);
+
+    let updatedData = []; // 临时数组
+
+    // 1. 没有数据
+    if (currentData === null) {
+      // 写入
+      updatedData.push({
+        gid: game.gid,
+        title: game.title,
+        slug: game.slug,
+      });
+    } else {
+      // 2. 如果有数据，比较关键唯一值
+
+      let currentGids = currentData.map((i) => i.gid);
+      console.log(`currentGids`, currentGids);
+
+      // 2.1 如果不存在gid，则更新
+      if (!currentGids.includes(game.gid)) {
+        updatedData = currentData.push({
           gid: game.gid,
           title: game.title,
           slug: game.slug,
         });
-
-        _currentPlayedGames.games = [...new Set(_currentPlayedGames.games)];
-
-        localStorage.setItem(
-          "playedGames",
-          JSON.stringify(_currentPlayedGames)
-        );
       }
+
+      updatedData = currentData.slice();
     }
+
+    setStorage(`playedGames`, updatedData);
+    console.log(`已更新：`, currentData);
   };
   return (
     <Layout title={game.title}>
@@ -54,6 +89,7 @@ const Play = ({ game, relatedGames }) => {
             alt={game.title}
             width={200}
             height={200}
+            onClick={handleClick}
           />
           <h1 className="my-2 font-bold text-white drop-shadow">
             <span>{`${game.title}`}</span>
@@ -123,10 +159,13 @@ export default Play;
 export const getStaticProps = async (ctx) => {
   const currentGame = await getGameBySlug(ctx.params.slug);
   const relatedGames = await getRelatedGamesBySlug(ctx.params.slug);
+
+  // const paths = await getAllGamesWithSlug();
   return {
     props: {
       game: currentGame,
       relatedGames,
+      // paths,
       // categories: games,
     },
     // revalidate: 60,

@@ -1,23 +1,30 @@
 import Image from "next/future/image";
+
 import Link from "next/link";
-import * as React from "react";
+
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
 import {
   getAllCategoriesWithSlug,
   getDataForCategoryList,
 } from "../../lib/api";
+import GetIcon from "../../components/Icons";
 import { ADS_SLOT_ID, IMAGE_FORMAT, IMAGE_PATH } from "../../lib/constants";
 
-const CategoryListPage = ({ categories, allGames }) => {
+const CategoryListPage = ({ allGames }) => {
   // console.log(`allGames`, allGames);
+
+  // console.log(
+  //   `category url`,
+  //   JSON.stringify(allGames.map((i) => i.category.slug).join(`,`))
+  // );
   // console.log(
   //   `allGames`,
   //   JSON.stringify([].concat(allGames.map((i) => i.games)).join(","))
   // );
 
   return (
-    <Layout>
+    <Layout title={`Category`}>
       <h1 className="m-4 flex justify-center text-xl font-bold text-cyan-600">
         <span>Category</span>
       </h1>
@@ -28,6 +35,7 @@ const CategoryListPage = ({ categories, allGames }) => {
               <Link href={`/category/${item.category.slug}`}>
                 <a className="flex justify-between rounded-lg border bg-white p-3">
                   <div className="flex items-center space-x-2">
+                    {GetIcon({ name: `${item.category.slug}` })}
                     <span>{item.category.name}</span>
                   </div>
                   <div className="flex items-center space-x-2">
@@ -53,9 +61,15 @@ const CategoryListPage = ({ categories, allGames }) => {
                         ))}
                       </ul>
                     ) : null}
-                    <span className="text-xs">
-                      {item.games.length + (index < 2 ? `+` : ``)}
-                    </span>
+                    <div className="text-xs">
+                      {index < 2 ? (
+                        item.games.length + `+`
+                      ) : (
+                        <div className="w-6 h-6 text-center leading-6 bg-slate-200 text-slate-800 rounded-full">
+                          {item.games.length}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </a>
               </Link>
@@ -103,22 +117,6 @@ export const getStaticProps = async (ctx) => {
     };
     formatData.push(tmpData);
   });
-
-  // console.log(`formatData (`, formatData.length, `)`, formatData);
-
-  // let tmp = [];
-  // allCategories.map(async (item) => {
-  //   let games = await getGamesByCategory(item.slug, 3);
-  //   let tmpData = {
-  //     category: { name: games[0].category.name, slug: item.slug },
-  //     games: [...games.map((i) => i.slug)],
-  //   };
-
-  //   tmp.push(tmpData);
-  //   // console.log(`tmp (`, tmp.length, `)`, tmp);
-  // });
-
-  // console.log(`tmp (`, tmp.length, `)`, tmp);
 
   return {
     props: {
