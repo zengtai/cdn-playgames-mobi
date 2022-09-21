@@ -44,7 +44,7 @@ const Play = ({ game, relatedGames }) => {
     // }
     let currentData = getStorage(`playedGames`); // 提取本地数据，如果存在则追加，不存在则添加
 
-    console.log(`currentData: `, currentData);
+    // console.log(`currentData: `, currentData);
 
     let updatedData = []; // 临时数组
 
@@ -60,7 +60,7 @@ const Play = ({ game, relatedGames }) => {
       // 2. 如果有数据，比较关键唯一值
 
       let currentGids = currentData.map((i) => i.gid);
-      console.log(`currentGids`, currentGids);
+      // console.log(`currentGids`, currentGids);
 
       // 2.1 如果不存在gid，则更新
       if (!currentGids.includes(game.gid)) {
@@ -75,7 +75,7 @@ const Play = ({ game, relatedGames }) => {
     }
 
     setStorage(`playedGames`, updatedData);
-    console.log(`已更新：`, currentData);
+    // console.log(`已更新：`, currentData);
   };
   return (
     <Layout title={game.title}>
